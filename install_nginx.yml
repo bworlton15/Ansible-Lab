@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install the nginx package
+    dnf:
+      name: nginx
+      state: present
+
